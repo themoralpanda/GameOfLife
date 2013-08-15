@@ -16,19 +16,28 @@ About the Conway's Game of Life:
   each of which is in one of two possible states, alive or dead. Every cell interacts with its eight neighbours,
   which are the cells that are horizontally, vertically, or diagonally adjacent.
   
+  Rules for the Next Generation:
+  ===============================
+  
+      -  Any live cell with fewer than two live neighbours dies, as if caused by under-population.
+      -  Any live cell with two or three live neighbours lives on to the next generation.
+      -  Any live cell with more than three live neighbours dies, as if by overcrowding.
+      -  Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+      
   
 About the Solution:
 ===================
 
-The Javascript based visualization of Game Of Life involves a matrix of 9x9 buttons to get the pattern input from the user.
+  The Javascript based visualization of Game Of Life involves a matrix of 9x9 buttons to get the pattern input from the user.
 
-After the input pattern is obtained , then the next Generation is obtained based on the following rules.
+  After the input pattern is obtained , then the next Generation is obtained based on the above rules.
+  
+  Limitations:
+  ============
+    Only 9x9 Matrix of Cells are available. Because the algorithm only works for 9x9 since the algorithm used involves
+    evaluating the next generation based on Button IDs which can range in my solution frm 'btn 01' to 'btn 99'
 
-  Rules for the Next Generation:
-  ===============================
-  
-  -  Any live cell with fewer than two live neighbours dies, as if caused by under-population.
-  -  Any live cell with two or three live neighbours lives on to the next generation.
-  -  Any live cell with more than three live neighbours dies, as if by overcrowding.
-  -  Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
-  
+
+
+
+
