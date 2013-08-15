@@ -8,7 +8,7 @@ email: haivicky at gmail dot com
 
 
 About the Conway's Game of Life:
-==================================
+
   
   WikiPedia entry : http://en.wikipedia.org/wiki/Conway's_Game_of_Life
   
@@ -17,7 +17,7 @@ About the Conway's Game of Life:
   which are the cells that are horizontally, vertically, or diagonally adjacent.
   
   Rules for the Next Generation:
-  ===============================
+
   
       -  Any live cell with fewer than two live neighbours dies, as if caused by under-population.
       -  Any live cell with two or three live neighbours lives on to the next generation.
@@ -26,14 +26,14 @@ About the Conway's Game of Life:
       
   
 About the Solution:
-===================
+
 
   The Javascript based visualization of Game Of Life involves a matrix of 9x9 buttons to get the pattern input from the user.
 
   After the input pattern is obtained , then the next Generation is obtained based on the above rules.
   
   Limitations:
-  ============
+
     Only 9x9 Matrix of Cells are available. Because the algorithm only works for 9x9 since the algorithm used involves
     evaluating the next generation based on Button IDs which can range in my solution frm 'btn 01' to 'btn 99'
 
